@@ -11,19 +11,19 @@ function draw() {
 //dress, body?
   stroke(0);
   strokeWeight(5);
-  fill(#F49CF5);
+  fill(244, 156, 245);
   triangle(400, 200, 200, 600, 600, 600);
 
 //eye blinks when mouse is pressed
-if (touchStarted) {
+  if (mouseIsPressed) {
   //close eyelid
   stroke(0);
   strokeWeight (5);
   //top eyelid
-  fill(#E0A0F7);
+  fill(224, 160, 247);
   arc(400, 200, 200, 200, PI, TWO_PI, CHORD);
   //bottom eyelid
-  fill (#FAE3E4);
+  fill (250, 227, 228);
   arc(400, 200, 200, 200, 0, PI, CHORD);
   
   //eyelashes
@@ -41,7 +41,7 @@ if (touchStarted) {
 }
 
 //eye is open when mouse is not pressed
-}else {
+else {
   // white of eye
   stroke(0);
   strokeWeight (5);
@@ -96,7 +96,7 @@ if (touchStarted) {
 
 //smile
    noFill();
-   stroke (#740655);
+   stroke (116, 6, 85);
    strokeWeight (5);
    arc(400, 330, 20, 15, 0, PI);
 
@@ -106,7 +106,7 @@ if (touchStarted) {
   line (307, 387, 256, 361);
 
 //left hand
-  fill (#FAE3E4);
+  fill (250, 227, 228);
   ellipse (256, 361, 30, 30);
 
 
@@ -114,7 +114,7 @@ if (touchStarted) {
   line (494, 387, 555, 421);
 
 //right hand
-  fill (#FAE3E4);
+  fill (250, 227, 228);
   ellipse (555, 421, 30, 30);
   
 //legs
@@ -122,14 +122,14 @@ if (touchStarted) {
   line (470, 602, 470, 653);
   
 //feet
-  fill (#F9FC3D);
+  fill (249, 252, 61);
   ellipse (315, 660, 40, 20);
   ellipse (485, 660, 40, 20);
 
 //pockets
-  fill (#A9EDF2);
+  fill (169, 237, 242);
   arc(325, 500, 50, 70, 0, PI, CHORD);
-  fill (#A9EDF2);
+  fill (169, 237, 242);
   arc(470, 500, 50, 70, 0, PI, CHORD);
   
 //belt or waistband
@@ -140,6 +140,6 @@ if (touchStarted) {
 
 
 
-  print (touchX, touchY);
+  print (mouseX, mouseY);
 
 }
